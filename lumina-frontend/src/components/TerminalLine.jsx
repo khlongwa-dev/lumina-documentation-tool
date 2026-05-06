@@ -83,7 +83,7 @@ export default function TerminalLine({ entry }) {
             {entry.meta.command?.toUpperCase()}
           </span>
         </div>
-        <div style={{ color: colors.muted, fontSize: "0.82rem", wordBreak: "break-word" }}>{entry.meta.input}</div>
+        <div style={{ color: colors.muted, fontSize: "0.82rem", wordBreak: "break-word", whiteSpace: "pre-wrap" }}>{entry.meta.input}</div>
       </div>
       <DocBlock meta={entry.meta} />
     </div>
