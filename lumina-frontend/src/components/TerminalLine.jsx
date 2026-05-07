@@ -19,7 +19,7 @@ export default function TerminalLine({ entry }) {
     <div style={fadeStyle}>
       <div style={{ display: "flex", alignItems: "flex-start", gap: "0.5rem" }}>
         <span style={{ color: colors.prompt, userSelect: "none", flexShrink: 0 }}>lumina ❯</span>
-        <span style={{ color: colors.text, wordBreak: "break-all" }}>{entry.content}</span>
+        <span style={{ color: colors.text, wordBreak: "break-word", whiteSpace: "pre-wrap" }}>{entry.content}</span>
       </div>
     </div>
   );
