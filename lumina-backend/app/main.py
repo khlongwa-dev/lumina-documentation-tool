@@ -15,7 +15,7 @@ app = FastAPI(
 # CORS — allows React frontend to talk to this backend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://lumina-documentation-tool.vercel.app", "http://localhost:5173"],
+    allow_origins=["https://lumina-documentation-tool-np6ys52lw.vercel.app", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
